@@ -5,6 +5,7 @@ import Login from './Componentes/Seguridad/Login';
 import RegistrarUsuario from './Componentes/Seguridad/RegistrarUsuario';
 import theme from './Theme/Theme';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import Libro from './Componentes/Pantallas/Libro';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Switch>
           <Route exact path="/login" component={Login}/>
           <Route exact path="/registrar" component={RegistrarUsuario}/>
+          <Route exact path="/" component={Libro} />
         </Switch>
       </Router>
     </ThemeProvider>
